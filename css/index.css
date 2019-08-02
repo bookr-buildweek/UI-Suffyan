@@ -161,8 +161,13 @@ table {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 500px;
   position: relative;
+}
+@media screen and (max-width: 500px) {
+  .hero-section-image {
+    height: 650px;
+    background-color: #d7d2d8;
+  }
 }
 .hero-section-image .hero-section-images-image {
   width: 100%;
@@ -173,9 +178,15 @@ table {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
-  position: relative;
+  position: absolute;
   top: 200px;
-  right: 325px;
+  right: 50px;
+}
+@media screen and (max-width: 500px) {
+  .hero-section-image .hero-content {
+    top: 450px;
+    right: 100px;
+  }
 }
 .hero-section-image .hero-sign-up {
   width: 50%;
@@ -223,12 +234,28 @@ table {
   align-items: center;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 800px) {
+  .intro-section {
+    flex-direction: column;
+  }
+}
 .intro-section .you-image img {
   width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .intro-section .you-image img {
+    margin: 30px 0 30px 0;
+  }
 }
 .intro-section .you-text {
   width: 400px;
   display: inline-block;
+}
+@media screen and (max-width: 800px) {
+  .intro-section .you-text {
+    order: -1;
+    margin: 30px 0 30px 0;
+  }
 }
 .intro-section .you-text p {
   font-size: 24px;
@@ -242,6 +269,11 @@ table {
   display: inline-block;
   text-align: right;
 }
+@media screen and (max-width: 800px) {
+  .intro-section .we-text {
+    margin: 30px 0 30px 0;
+  }
+}
 .intro-section .we-text p {
   font-size: 24px;
 }
@@ -252,11 +284,22 @@ table {
 .intro-section .we-image img {
   width: 100%;
 }
+@media screen and (max-width: 800px) {
+  .intro-section .we-image img {
+    margin: 30px 0 30px 0;
+  }
+}
 .product-info-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 800px) {
+  .product-info-section {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .product-info-section .product-info-title {
   width: 100%;
@@ -269,6 +312,11 @@ table {
   width: 230px;
   margin: 30px 0 30px 0;
   text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .product-info-section .product-info {
+    width: 80%;
+  }
 }
 .product-info-section .product-info h3 {
   font-size: 24px;

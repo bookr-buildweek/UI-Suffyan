@@ -15,8 +15,11 @@
     align-items: center;
     flex-wrap: wrap; 
     width:100%;
-    height: 500px;
     position: relative;
+    @media screen and (max-width: 500px) {
+        height: 650px;
+        background-color: #d7d2d8;
+      }
 
     .hero-section-images-image{
         width:100%;
@@ -28,9 +31,13 @@
     display: flex;
     flex-wrap: wrap;
     align-self: flex-end;
-    position: relative;
+    position: absolute;
     top: 200px;
-    right: 325px;
+    right: 50px;
+    @media screen and (max-width: 500px) {
+        top: 450px;
+        right: 100px;
+      }
     }
 
     .hero-sign-up{
@@ -85,16 +92,26 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+      }
 
 
     .you-image img{
         width: 100%;
+        @media screen and (max-width: 800px) {
+            margin: 30px 0 30px 0;
+          }
     }
 
     .you-text{
         width: 400px;
         display: inline-block;
+
+        @media screen and (max-width: 800px) {
+            order: -1;
+            margin: 30px 0 30px 0;
+          }
 
         p{
             font-size: 24px;
@@ -104,12 +121,16 @@
             font-size: 48px;
             color: #BF9018;
         }
+        
     }
 
     .we-text{
         width: 400px;
         display: inline-block;
         text-align: right;
+        @media screen and (max-width: 800px) {
+            margin: 30px 0 30px 0;
+          }
 
         p{
             font-size: 24px;
@@ -123,6 +144,9 @@
 
     .we-image img{
         width: 100%;
+        @media screen and (max-width: 800px) {
+            margin: 30px 0 30px 0;;
+          }
     }
 
 
@@ -134,6 +158,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+      }
 
 
     .product-info-title{
@@ -148,6 +176,10 @@
         width: 230px;
         margin: 30px 0 30px 0;
         text-align: center;
+    
+        @media screen and (max-width: 500px) {
+            width: 80%;
+          }
 
         h3{
             font-size: 24px;
